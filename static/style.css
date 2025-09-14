@@ -43,12 +43,11 @@ body {
 }
 
 a, a:link, a:visited {
-    color: #2196F3;
-    text-decoration: none;
+    color: #a62f33;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #333;
 }
 
 h1,h2 {
@@ -67,7 +66,7 @@ p {
 /* Header */
 header {
     padding: 15px;
-    color: #1182DB;
+    color: #a62f33;
     text-align: center;
 }
 
@@ -75,7 +74,7 @@ header {
     margin-bottom: 15px;
     color: white;
     font-weight: bold;
-    background-color: rgb(33, 150, 243);
+    background-color: #a62f33;
     padding: 15px;
     border-radius: 4px;
     text-align: center;
@@ -145,7 +144,7 @@ input:focus:-ms-input-placeholder { opacity: 0; }
 .searchbar > h3 {
     font-size: 200%;
     font-weight: bold;
-    color: #1182DB;
+    color: #a62f33;
     margin-bottom: 10px;
 }
 
@@ -186,7 +185,6 @@ section li {
     margin-left: 1em;
 }
 .bridge-card {
-    position: relative;
     text-align: center;
 }
 
@@ -197,7 +195,7 @@ button.small {
 }
 
 button:hover {
-    background: #49afff;
+    background: #333;
 }
 
 .description {
@@ -227,7 +225,7 @@ form {
     line-height: 22px;
     text-align: center;
     color: #fff;
-    background-image: radial-gradient(#49afff, #1182DB);
+    background-image: radial-gradient(#a62f33, #a62f3388);
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     border-radius: 16px;
@@ -329,10 +327,10 @@ h1.pagetitle {
     font-size: 300%;
     font-weight: bold;
     text-align: center;
-    color: #2196F3;
+    color: #a62f33;
 }
 h1.pagetitle > a {
-    color: #2196F3;
+    color: #a62f33;
 }
 .buttons {
     text-align: center;
@@ -347,7 +345,7 @@ button {
     margin: 12px auto 0px;
     border-radius: 4px;
     border: 1px solid transparent;
-    background: #2196F3 none repeat scroll 0% 0%;
+    background: #a62f33 none repeat scroll 0% 0%;
     cursor: pointer;
     width: 200px;
 }
@@ -395,19 +393,19 @@ button {
     }
 
     body {
-        background-color: #202325;
-        color: #e8e6e3;
+        background-color: #1d1d1d;
+        color: #eeeeee;
     }
 
-    a, a:link, a:visited {
-        color: #0A6AB6;
+    a:hover {
+        color: #ccc;
     }
 
     /* Header */
     select,
     input[type="text"],
     input[type="number"] {
-        background-color: #181A1B;
+        background-color: #181818;
         /* does not apply to placeholder text without !important */
         color: white !important;
 
@@ -416,16 +414,17 @@ button {
 
     /* Section */
     section {
-        background-color: #181A1B;
+        background-color: #181818;
     }
 
     /* Buttons */
     button {
-        background: #0A6AB6 none repeat scroll 0% 0%;
+        background: #a62f33 none repeat scroll 0% 0%;
     }
 
     button:hover {
-        background: #004daa;
+        background: #ccc;
+        color: #000;
     }
 
     @supports (display: grid){
@@ -452,16 +451,16 @@ button {
 }
 @media (prefers-color-scheme: dark) {
     .search-result {
-        background-color: #202325;
+        background-color: #1d1d1d;
     }
 }
 .search-result h2 {
-  color: #288cfc;
+  color: #a62f33;
 }
 
 .search-result a {
   text-decoration: none;
-  color: #248afa;
+  color: #a62f33;
 }
 .search-result .icon {
   margin: 0 15px 0 0;
