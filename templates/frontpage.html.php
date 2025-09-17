@@ -29,8 +29,8 @@
 <?= raw($bridges) ?>
 
 <section class="footer">
-    <a href="https://github.com/RSS-Bridge/rss-bridge">
-        https://github.com/RSS-Bridge/rss-bridge
+    <a href="https://git.xnand.xyz/XNAND/rss-bridge">
+        https://git.xnand.xyz/XNAND/rss-bridge
     </a>
 
     <br>
