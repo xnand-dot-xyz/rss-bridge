@@ -3,7 +3,7 @@
 class HeiseBridge extends FeedExpander
 {
     const MAINTAINER = 'Dreckiger-Dan';
-    const NAME = 'Heise Online Bridge';
+    const NAME = 'Heise Online';
     const URI = 'https://heise.de/';
     const CACHE_TIMEOUT = 1800; // 30min
     const DESCRIPTION = 'Returns the full articles instead of only the intro';
@@ -29,6 +29,9 @@ class HeiseBridge extends FeedExpander
                 => 'https://www.heise.de/rss/heise-Rubrik-Wirtschaft-atom.xml',
                 'heise online Journal'
                 => 'https://www.heise.de/rss/heise-Rubrik-Journal-atom.xml',
+                // → https://www.heise.de/thema
+                'heise online > Thema > Open Source'
+                => 'https://www.heise.de/thema/Open-Source.xml',
                 'heise online Top-News'
                 => 'https://www.heise.de/rss/heise-top-atom.xml',
                 //'iMonitor – Internet-Störungen'
@@ -230,7 +233,8 @@ class HeiseBridge extends FeedExpander
         $content = $article->find('.article-content', 0);
         if ($content) {
             $contentElements = $content->find(
-                'p, h3, ul, ol, table, pre, noscript img, a-bilderstrecke h2, a-bilderstrecke figure, a-bilderstrecke figcaption, noscript iframe'
+                // phpcs:ignore
+                'p, h3, ul, ol, table, pre, noscript img, noscript iframe, a-bilderstrecke h2, a-bilderstrecke figure, a-bilderstrecke figcaption, figure figcaption.a-caption div.text'
             );
             $item['content'] .= implode('', $contentElements);
         }
